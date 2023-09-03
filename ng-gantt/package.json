@@ -1,6 +1,6 @@
 {
-  "name": "ng-gantt",
-  "version": "2.5.6",
+  "name": "ng-gantt-fork",
+  "version": "3.0.0",
   "license": "MIT",
   "homepage": "https://github.com/jsGanttImproved/ng-gantt",
   "repository": {
@@ -16,16 +16,8 @@
     "gantt"
   ],
   "peerDependencies": {
-    "@angular/core": ">=8.0.0",
-    "@angular/common": ">=8.0.0",
+    "@angular/core": ">=14.0.0",
+    "@angular/common": ">=14.0.0",
     "jsgantt-improved": "*"
-  },
-  "ngPackage": {
-    "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
-    
-    "lib": {
-      "entryFile": "src/public_api.ts"
-    },
-    "dest": "../dist/ng-gantt"
   }
 }

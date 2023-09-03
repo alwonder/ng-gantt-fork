@@ -186,6 +186,34 @@
           }
         }
       }
+    },
+    "lib": {
+      "projectType": "library",
+      "root": "ng-gantt",
+      "sourceRoot": "ng-gantt",
+      "prefix": "",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "ng-gantt/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "ng-gantt/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "ng-gantt/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
     }
   },
   "schematics": {
