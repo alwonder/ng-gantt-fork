@@ -19,7 +19,7 @@ export const routes: Routes = [
     BrowserModule,
     FormsModule,
     NgGanttEditorModule,
-    RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
